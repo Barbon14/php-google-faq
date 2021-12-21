@@ -33,7 +33,7 @@
     ?>
 </head>
 <body>
-    <p>
+    <div class="container">
         <?php
             
             foreach ($faqs as $faq) {
@@ -49,6 +49,6 @@
                 }
             }
         ?>
-    </p>
+    </div>
 </body>
 </html>
