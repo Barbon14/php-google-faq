@@ -33,6 +33,22 @@
     ?>
 </head>
 <body>
-    
+    <p>
+        <?php
+            
+            foreach ($faqs as $faq) {
+                foreach ($faq as $key => $value) {
+                    if ($key === 'title') {
+                        echo "<h2>$value</h2>";
+                    }
+                }
+                foreach ($faq as $key => $value) {
+                    if ($key === 'content') {
+                        echo "<p>$value<p>";
+                    }
+                }
+            }
+        ?>
+    </p>
 </body>
 </html>
